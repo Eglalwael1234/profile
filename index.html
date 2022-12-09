@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="user hide-details" id="userBox">
+        <img src="WhatsApp Image 2022-05-30 at 9.36.36 AM.jpeg" onclick="openinfo()">
+        <div class="info">
+            <h1>Eglal Wael</h1>
+            <p>She works in Web design and is a University Student.</p>
+            <p>From: Mansouro</p>
+            <a href="#">Connect with me</a>
+        </div>
+        <div class="close-icon" onclick="closeinfo()"></div>
+    </div>
+
+    <script>
+        let userBox = document.getElementById("userBox");
+
+        function openinfo(){
+            userBox.classList.remove("hide-details");
+        }
+        function closeinfo(){
+            userBox.classList.add("hide-details");
+        }
+    </script>
+</body>
+</html>
